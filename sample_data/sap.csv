@@ -1,0 +1,4 @@
+company_name,value,unit,description
+ABC Corp,200,Liters,Diesel Fuel
+ABC Corp,-50,Liters,Invalid Fuel
+XYZ Ltd,100,kWh,Electricity Usage
