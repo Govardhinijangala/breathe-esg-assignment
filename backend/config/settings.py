@@ -132,6 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Allow React dev server and production Vercel frontend to call this Django API
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    # Add your Vercel URL here once deployed, e.g.:
-    # "https://your-app.vercel.app",
+    "https://breathe-esg-assignment.vercel.app",
 ]
