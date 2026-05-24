@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%s(eu88brf^t$ikjyz=7rr9id*8mi&96oxi-zy9lv=h%$3l)qd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  # Never True in production
 
 ALLOWED_HOSTS = [
     "breathe-esg-assignment-zt17.onrender.com",
@@ -129,7 +129,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Allow React dev server (Vite runs on port 5173) to call this Django API
+# Allow React dev server and production Vercel frontend to call this Django API
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    # Add your Vercel URL here once deployed, e.g.:
+    # "https://your-app.vercel.app",
 ]

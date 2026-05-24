@@ -6,7 +6,7 @@ import {
   AlertTriangle, XCircle, Clock, BarChart3
 } from 'lucide-react'
 
-const API_BASE = 'http://127.0.0.1:8000/api'
+const API_BASE = 'https://breathe-esg-assignment-zt17.onrender.com/api'
 
 // ── Floating particle background ──────────────────────────────────────────────
 function Particles() {
